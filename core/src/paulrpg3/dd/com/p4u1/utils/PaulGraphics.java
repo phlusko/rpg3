@@ -25,6 +25,9 @@ public class PaulGraphics {
     static public Vector2 pixelToCoord(float arg0, float arg1) {
         return PaulGraphics.pixelToCoord(new Vector2(arg0, arg1));
     }
+    static public Vector2 dupleToCoord(Duple duple) {
+        return new Vector2((duple.x * 100) + 50, (duple.y * 100) + 50);
+    }
 
     static public Vector2 pixelToCoord(int arg0, int arg1) {
         return PaulGraphics.pixelToCoord(new Vector2(arg0, arg1));

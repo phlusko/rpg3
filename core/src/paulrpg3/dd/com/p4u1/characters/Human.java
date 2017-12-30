@@ -3,15 +3,17 @@ package paulrpg3.dd.com.p4u1.characters;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.TimeUtils;
-import com.thegame.dd.p4u1.rooms.Map;
-import com.thegame.dd.p4u1.rooms.Room;
-import com.thegame.dd.p4u1.rooms.Spot;
-import com.thegame.dd.p4u1.things.Exit;
-import com.thegame.dd.p4u1.things.Thing;
-import com.thegame.dd.p4u1.utils.Duple;
-import com.thegame.dd.p4u1.utils.JazzHands;
-import com.thegame.dd.p4u1.utils.PaulGraphics;
-import com.thegame.dd.p4u1.utils.Walker;
+
+import paulrpg3.dd.com.p4u1.rooms.Map;
+import paulrpg3.dd.com.p4u1.rooms.Room;
+import paulrpg3.dd.com.p4u1.rooms.Spot;
+import paulrpg3.dd.com.p4u1.things.Exit;
+import paulrpg3.dd.com.p4u1.things.Thing;
+import paulrpg3.dd.com.p4u1.utils.Duple;
+import paulrpg3.dd.com.p4u1.utils.JazzHands;
+import paulrpg3.dd.com.p4u1.utils.PaulGraphics;
+import paulrpg3.dd.com.p4u1.utils.Walker;
+
 
 /**
  * Created by Paul on 8/29/2017.

@@ -1,6 +1,6 @@
 package paulrpg3.dd.com.p4u1.characters;
 
-import com.thegame.dd.p4u1.utils.Duple;
+import paulrpg3.dd.com.p4u1.utils.Duple;
 
 /**
  * Created by Paul on 8/29/2017.
