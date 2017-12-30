@@ -53,7 +53,7 @@ public abstract class Room {
     }
 
     public static boolean[][] blankGround() {
-        boolean[][] ground = new boolean[10][5];
+        boolean[][] ground = new boolean[20][10];
         for(int x = 0; x < ground.length; x++) {
             for (int y = 0; y < ground[x].length; y++) {
                 ground[x][y] = true;

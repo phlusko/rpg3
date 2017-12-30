@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import paulrpg3.dd.com.p4u1.RPGWorld;
+import paulrpg3.dd.com.p4u1.characters.Paul;
 import paulrpg3.dd.com.p4u1.ui.ConnectionScreen;
 
 /**
@@ -74,6 +75,8 @@ public class PaulServer implements Runnable{
             data = new JSONObject(arg0);
             String type = data.getString("type");
             if (type.contentEquals("ready")) {
+                Paul p = new Paul(world.yard.getMap().origin.location);
+                world.humans.add(p);
                 updateLanPositions();
             }
             if (type.contentEquals("partyInfoRequest")) {

@@ -56,7 +56,14 @@ public class WorldScreen implements Screen {
     }
 
     public void logic() {
+        if (adapter.getMessageHolder().getListSize() > 0) {
 
+            processMessage(adapter.getMessageHolder().popMessage());
+        }
+    }
+
+    public void processMessage(String arg0) {
+        Gdx.app.log("phlusko", "getting info back:" + arg0);
     }
 
     @Override

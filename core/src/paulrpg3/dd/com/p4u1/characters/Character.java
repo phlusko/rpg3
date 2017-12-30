@@ -14,6 +14,7 @@ public abstract class Character {
     int life;
     public Duple location;
     public Duple previous_location;
+    public int id = 0;
 
     public Character() {
         life = 100;
