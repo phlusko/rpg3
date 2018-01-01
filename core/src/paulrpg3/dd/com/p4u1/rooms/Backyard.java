@@ -11,6 +11,7 @@ public class Backyard extends Room{
     public Backyard(){
         super();
         ground = Room.blankGround();
+        map = new Map(ground);
         map.origin = map.spots[0][0];
     }
     @Override

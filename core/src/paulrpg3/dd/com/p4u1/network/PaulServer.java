@@ -16,7 +16,7 @@ import paulrpg3.dd.com.p4u1.characters.Paul;
 import paulrpg3.dd.com.p4u1.ui.ConnectionScreen;
 
 /**
- * Created by Paul on 12/28/2016.
+ * Created by Paul on 12/28/2016. Ported and Edited 12/30/2017 :)
  */
 
 public class PaulServer implements Runnable{
