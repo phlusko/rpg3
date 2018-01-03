@@ -16,12 +16,12 @@ public class Backyard extends Room{
     }
     @Override
     public boolean[][] getGround() {
-        return new boolean[0][];
+        return ground;
     }
 
     @Override
     public Map getMap() {
-        return null;
+        return map;
     }
 
     @Override
