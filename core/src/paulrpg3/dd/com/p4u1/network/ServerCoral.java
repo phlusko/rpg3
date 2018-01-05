@@ -8,6 +8,8 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import paulrpg3.dd.com.p4u1.characters.Paul;
+
 /**
  * Created by Paul on 1/10/2017.
  */
@@ -30,6 +32,9 @@ public class ServerCoral implements Runnable {
             photoLanServer.ready = true;
             JSONObject data;
             data = new JSONObject();
+            Paul paul = new Paul(photoLanServer.world.yard.getMap().origin.location);
+            paul.id = photoLanServer.workhorses.size();
+            photoLanServer.world.roster.addCharacter(paul);
             try {
                 data.put("type", "ready");
                 //data.put("number", photoLanServer.workhorses.size());

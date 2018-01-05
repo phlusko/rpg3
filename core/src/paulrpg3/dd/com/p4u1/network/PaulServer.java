@@ -46,6 +46,9 @@ public class PaulServer implements Runnable{
             //Gdx.app.exit();
         }
         world = new RPGWorld();
+        Paul paul = new Paul(world.yard.getMap().origin.location);
+        paul.id = 0;
+        world.roster.addCharacter(paul);
         updateLanPositions();
         //demo1 = new LineDemo(this);
     }
@@ -134,8 +137,8 @@ public class PaulServer implements Runnable{
         try {
             JSONObject data = new JSONObject();
             data.put("type", "getPosition");
-
             data.put("position", 0);
+            data.put("roster", world.roster.getRosterJSON());
             leaderMessages.addMessage(data.toString());
             int position_count = 1;
             for(Iterator<ServerWorkhorse> i = workhorses.iterator(); i.hasNext(); ) {

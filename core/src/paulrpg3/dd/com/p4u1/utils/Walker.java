@@ -19,6 +19,8 @@ public class Walker {
     boolean baby = false;
     Sprite[][] sprites = new Sprite[4][4];
     Texture sprite_texture;
+    int walkerHeight;
+    int walkerWidth;
     TextureRegion sprite_region;
     HashMap<String, Sprite[][]> spriteHasher = new HashMap<String, Sprite[][]>();
     HashMap<String, Texture> textureHasher = new HashMap<String, Texture>();
@@ -230,7 +232,7 @@ public class Walker {
         } else if (kid) {
             size = 100;
         } else {
-            size = 128;
+            size = 64;
         }
         for (int index = 0; index < body_pieces.length; index++) {
             String curr = body_pieces[index];

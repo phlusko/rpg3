@@ -2,6 +2,7 @@ package paulrpg3.dd.com.p4u1;
 
 import java.util.ArrayList;
 
+import paulrpg3.dd.com.p4u1.characters.CharacterRoster;
 import paulrpg3.dd.com.p4u1.characters.Human;
 import paulrpg3.dd.com.p4u1.characters.Paul;
 import paulrpg3.dd.com.p4u1.rooms.Backyard;
@@ -12,11 +13,11 @@ import paulrpg3.dd.com.p4u1.rooms.Backyard;
 
 public class RPGWorld {
     public ArrayList<Human> humans = new ArrayList<Human>();
-    public Backyard yard = new Backyard();
+    public Backyard yard;
+    public CharacterRoster roster;
     public RPGWorld() {
-
+        roster = new CharacterRoster();
+        yard = new Backyard();
     }
-
-
 
 }

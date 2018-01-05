@@ -53,6 +53,9 @@ public class WorldScreen implements Screen {
             game.shapes.line(0, yizer, PaulGraphics.GAME_WIDTH, yizer);
         }
         game.shapes.end();
+        game.batch.begin();
+        game.world.roster.drawMe(game.batch);
+        game.batch.end();
     }
 
     public void logic() {
@@ -64,6 +67,9 @@ public class WorldScreen implements Screen {
 
     public void processMessage(String arg0) {
         Gdx.app.log("phlusko", "getting info back:" + arg0);
+        if (arg0.contentEquals("getPosition")){
+
+        }
     }
 
     @Override
